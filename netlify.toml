@@ -7,5 +7,5 @@
 
 [build]
   base    = "my-app"
-  publish = "./build"
+  publish = "my-app/build"
   command = "yarn build"
