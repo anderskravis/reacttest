@@ -75,3 +75,14 @@ h3 {
 .block-placeholder:hover {
 	opacity: 1;
 }
+
+.go-section {
+	background: white;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.23);
+	padding: 40px 80px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	display: flex;
+	border-radius: 12px;
+}

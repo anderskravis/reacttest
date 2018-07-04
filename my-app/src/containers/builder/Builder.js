@@ -26,7 +26,7 @@ class Builder extends Component {
 							<div className="block-row">
 								<div className="block">
 									<h3>Block Name</h3>
-									<span className="block-time">30 mins</span>
+									<span className="block-time">15 mins</span>
 									<p className="block-description">This is the meeting description</p>
 								</div>
 							</div>
@@ -34,7 +34,7 @@ class Builder extends Component {
 							<div className="block-row">
 								<div className="block">
 									<h3>Block Name</h3>
-									<span className="block-time">30 mins</span>
+									<span className="block-time">15 mins</span>
 									<p className="block-description">This is the meeting description</p>
 								</div>
 							</div>
@@ -50,6 +50,10 @@ class Builder extends Component {
 
 						</div>
 
+					</div>
+
+					<div className="go-section">
+							<p>Ready to go? Send invites</p>
 					</div>
 
       </div>
