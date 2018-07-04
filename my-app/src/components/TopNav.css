@@ -1,0 +1,12 @@
+.topNav {
+	background: #fafafa;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.12);
+	padding: 10px;
+}
+
+.topNav-left {
+}
+
+.button {
+	display: inline;
+}
