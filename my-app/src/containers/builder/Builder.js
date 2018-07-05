@@ -25,7 +25,7 @@ Block.propTypes = {
 
 Block.defaultProps = {
   title: "Block Name",
-	span: 1,
+	span: 0,
 	description: "Add meeting notes"
 };
 

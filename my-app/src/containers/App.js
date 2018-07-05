@@ -5,19 +5,19 @@ function App() {
 
 	var BLOCKS = [
 		{
-			title: "test",
-			span: 5,
+			title: "👋 Test",
+			span: 15,
 			description: "notes",
 		},
 		{
-			title: "test2",
-			span: 10,
-			description: "notes2",
+			title: "Test 2",
+			span: 15,
+			description: "notes 2",
 		},
 		{
-			title: "test3",
+			title: "Test 3",
 			span: 15,
-			description: "notes3",
+			description: "notes 3",
 		}
 	];
 		return (
