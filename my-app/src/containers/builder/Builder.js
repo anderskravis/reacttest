@@ -1,6 +1,25 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import TopNav from '../../components/TopNav.js';
 import './Builder.css';
+
+var BLOCKS = [
+	{
+		title: "test",
+		span: 5,
+		description: "notes",
+	},
+	{
+		title: "test2",
+		span: 10,
+		description: "notes2",
+	},
+	{
+		title: "test3",
+		span: 15,
+		description: "notes3",
+	},
+]
 
 function Block(props) {
 	return (
@@ -12,22 +31,22 @@ function Block(props) {
 		</div>
 	</div>
 );
+}
 
 Block.propTypes = {
-  title: React.PropTypes.string,
-	span: React.PropTypes.number,
-	description: React.PropTypes.string
+  title: PropTypes.string.isRequired,
+	span: PropTypes.number.isRequired,
+	description: PropTypes.string
 };
 
 Block.defaultProps = {
   title: "Block Name",
-	span: 0,
+	span: 1,
 	description: "Add meeting notes"
 };
 
-}
 
-function Application() {
+function Application(props) {
 
     return (
 			<div>
@@ -46,9 +65,8 @@ function Application() {
 
 						<div className="block-holder">
 
-							<Block title="hi" span={15} description="meeting notes"/>
+						<Block />
 
-							<Block title="hey" />
 
 							<div className="block-row">
 								<div className="block-placeholder">
