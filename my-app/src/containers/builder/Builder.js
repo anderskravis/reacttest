@@ -3,23 +3,7 @@ import PropTypes from 'prop-types';
 import TopNav from '../../components/TopNav.js';
 import './Builder.css';
 
-var BLOCKS = [
-	{
-		title: "test",
-		span: 5,
-		description: "notes",
-	},
-	{
-		title: "test2",
-		span: 10,
-		description: "notes2",
-	},
-	{
-		title: "test3",
-		span: 15,
-		description: "notes3",
-	},
-]
+
 
 function Block(props) {
 	return (
@@ -48,6 +32,7 @@ Block.defaultProps = {
 
 function Application(props) {
 
+
     return (
 			<div>
 			<TopNav/>
@@ -65,16 +50,14 @@ function Application(props) {
 
 						<div className="block-holder">
 
-						<Block />
-
+						{props.blocks.map(function(block) {
+							return <Block title={block.title} span={block.span} description={block.description}/>
+						})}
 
 							<div className="block-row">
 								<div className="block-placeholder">
 									<p>Add a block</p>
 								</div>
-							</div>
-
-							<div className="block-row">
 							</div>
 
 						</div>
@@ -89,6 +72,11 @@ function Application(props) {
 			</div>
     );
 }
+
+Application.propTypes = {
+	players: PropTypes.array.isRequired,
+};
+
 
 
 export default Application;
