@@ -4,7 +4,7 @@ import Builder from './builder/Builder.js';
 class App extends PureComponent {
 	render() {
 		return (
-			<Builder/>
+			<Builder />
 		)
 	}
 }
